@@ -10,3 +10,20 @@ PyYAML
 matplotlib
 pandas
 requests
+
+
+tensorboard
+# wandb
+
+# Plotting ------------------------------------
+seaborn
+
+ipython  # interactive notebook
+psutil  # system utilization
+thop  # FLOPs computation
+
+
+numpy
+opencv-python
+scipy
+protobuf
