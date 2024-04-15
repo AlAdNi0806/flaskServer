@@ -1,9 +1,12 @@
 import os
 from PIL import Image
 
-from shiftlab_ocr.doc2text.crop import Crop
-from shiftlab_ocr.doc2text.recognition import Recognizer
-from shiftlab_ocr.doc2text.segmentation import Detector
+# from shiftlab_ocr.doc2text.crop import Crop
+# from shiftlab_ocr.doc2text.recognition import Recognizer
+# from shiftlab_ocr.doc2text.segmentation import Detector
+from textRecogniton.doc2text.crop import Crop
+from textRecogniton.doc2text.recognition import Recognizer
+from textRecogniton.doc2text.segmentation import Detector
 
 
 class Reader:
