@@ -41,7 +41,7 @@
 # if __name__ == '__name__':
 #     app.run(host='0.0.0.0', port=9000, debug=False)
 
-from shiftlab_ocr.doc2text.reader import Reader
+from shiftlab_ocr_old.doc2text.reader import Reader
 from werkzeug.utils import secure_filename
 from flask import Flask, request, jsonify
 from uuid import uuid4
