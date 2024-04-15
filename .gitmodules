@@ -1,0 +1,3 @@
+[submodule "shiftlab_ocr_old"]
+    path = shiftlab_ocr_old
+    url = <https://github.com/AlAdNi0806/flaskServer/blob/main/shiftlab_ocr_old>
