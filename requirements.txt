@@ -9,3 +9,4 @@ Pillow
 PyYAML
 matplotlib
 pandas
+requests
