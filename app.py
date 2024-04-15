@@ -41,7 +41,8 @@
 # if __name__ == '__name__':
 #     app.run(host='0.0.0.0', port=9000, debug=False)
 
-from shiftlab_ocr_old.doc2text.reader import Reader
+# from shiftlab_ocr_old.doc2text.reader import Reader
+from textRecogniton.doc2text.reader import Reader
 from werkzeug.utils import secure_filename
 from flask import Flask, request, jsonify
 from uuid import uuid4
@@ -50,6 +51,9 @@ import io
 import os
 import urllib.request
 import matplotlib.pyplot as plt
+
+
+
 
 
 app = Flask(__name__)
@@ -83,6 +87,7 @@ def get_image_size():
 
 @app.route('/getText', methods=['POST'])
 def getText():
+    print("working")
     if 'image' not in request.files:
         print("apsodifjaspodf")
         return jsonify({'error': 'No image part'}), 400
