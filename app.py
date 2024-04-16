@@ -55,9 +55,6 @@ import matplotlib.pyplot as plt
 from flask_ngrok import run_with_ngrok
 
 
-
-
-
 app = Flask(__name__)
 run_with_ngrok(app)
 
@@ -144,9 +141,5 @@ def getText():
 
 
 if __name__ == '__main__':
-    try:
-        # Attempt to run the Flask app on any free port
-        app.run()
-    except:
-        # If an error occurs (e.g., port cannot be allocated), print a message
-        print("An error occurred while trying to bind to a free port:")
+
+    app.run(host='0.0.0.0', port='0')
