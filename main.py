@@ -1,4 +1,4 @@
-from shiftlab_ocr.doc2text.reader import Reader
+from textRecogniton.doc2text.reader import Reader
 
 
 reader = Reader()
