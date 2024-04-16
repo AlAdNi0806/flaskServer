@@ -10,7 +10,7 @@ PyYAML
 matplotlib
 pandas
 requests
-distutils
+# distutils
 
 
 tensorboard
