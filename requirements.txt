@@ -10,6 +10,7 @@ PyYAML
 matplotlib
 pandas
 requests
+distutils
 
 
 tensorboard
@@ -24,6 +25,6 @@ thop  # FLOPs computation
 
 
 numpy
-opencv-python
+# opencv-python
 scipy
 protobuf
