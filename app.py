@@ -52,11 +52,11 @@ import os
 import urllib.request
 import matplotlib.pyplot as plt
 
-from flask_ngrok import run_with_ngrok
+
+
 
 
 app = Flask(__name__)
-run_with_ngrok(app)
 
 upload_dir = os.path.join(app.instance_path, 'uploads')
 os.makedirs(upload_dir, exist_ok=True)
@@ -141,5 +141,5 @@ def getText():
 
 
 if __name__ == '__main__':
-
-    app.run(host='0.0.0.0', port='0')
+    # app.run(debug=True, host='0.0.0.0')
+    app.run( host='0.0.0.0', port=71492)
