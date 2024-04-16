@@ -27,4 +27,4 @@ thop  # FLOPs computation
 numpy
 # opencv-python
 scipy
-protobuf
+protobuf<4.21.3  # https://github.com/ultralytics/yolov5/issues/8012
