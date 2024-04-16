@@ -141,5 +141,9 @@ def getText():
 
 
 if __name__ == '__main__':
-    # app.run(debug=True, host='0.0.0.0')
-    app.run( host='0.0.0.0', port=7149)
+    try:
+        # Attempt to run the Flask app on any free port
+        app.run(host='0.0.0.0', port='0')
+    except:
+        # If an error occurs (e.g., port cannot be allocated), print a message
+        print("An error occurred while trying to bind to a free port:")
