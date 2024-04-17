@@ -85,6 +85,15 @@ def get_image_size():
         return jsonify({'size': [img.width, img.height]})
 
 
+@app.route('/testRec', methods=['POST'])
+def testRec():
+    reader = Reader()
+    result = reader.doc2text("test.png")
+
+    print(result[0])
+    return (result[0])
+
+
 @app.route('/getText', methods=['POST'])
 def getText():
     print("working")
